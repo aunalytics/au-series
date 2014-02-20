@@ -15,8 +15,9 @@ var Series = require('au-series'),  // Load module
     fs = require('fs');
 
 series1.append(fs.writeFile, '/path/to/file', 'file contents');  // append async file write
+series1.append_sync(console.log, 'part way there');
 series1.append(fs.writeFile, '/path/to/file2', 'other contents');  // append async file write
-series1.append_async(fs.writeFileSync, '/path/to/file3', 'more contents');  // append sync file write
+series1.append_sync(fs.writeFileSync, '/path/to/file3', 'more contents');  // append sync file write
 
 // Start series of calls
 series1.go(function() {
