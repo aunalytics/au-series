@@ -1,13 +1,15 @@
 {
   "name": "au-series",
-  "description": "Module for creating a series of asyncronous calls."
+  "description": "Module for creating a series of asyncronous calls.",
   "version": "0.0.1",
   "author": {
     "name": "Robert Thompson",
     "email": "Robert.thompson@aunalytics.com"
   },
   "contributors": [ ],
-  "dependencies": { },
+  "dependencies": {
+    "au-logging" : "git+ssh://git@github.com:aunalytics/au-logging.git"
+  },
   "private": true
 }
 
