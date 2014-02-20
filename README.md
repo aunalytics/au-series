@@ -10,14 +10,16 @@ This module provides a lightweight way to create a series of commands that need 
 
 ```js
 
-var series = require('au-series')();  // create a series
+var Series = require('au-series'),  // Load module
+    series1 = Series(),  // Create a new series
+    fs = require('fs');
 
-s.append(fs.writeFile, '/path/to/file', 'file contents');  // append async file write
-s.append(fs.writeFile, '/path/to/file2', 'other contents');  // append async file write
-s.append_async(fs.writeFileSync, '/path/to/file3', 'more contents');  // append sync file write
+series1.append(fs.writeFile, '/path/to/file', 'file contents');  // append async file write
+series1.append(fs.writeFile, '/path/to/file2', 'other contents');  // append async file write
+series1.append_async(fs.writeFileSync, '/path/to/file3', 'more contents');  // append sync file write
 
 // Start series of calls
-s.go(function() {
+series1.go(function() {
   console.log('done with calls');
 });
 
