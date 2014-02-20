@@ -27,7 +27,7 @@ s.go(function() {
 
 * [append](#append)
 * [append_async](#append_async)
-* [go](#configs)
+* [go](#go)
 
 
 <a href="#append" name="append">#</a> Series.<b>append</b>(fn, [args, ...])
@@ -38,7 +38,7 @@ Allows you to append an asyncronous function to the list of calls. Pass an <i>fn
 
 Allows you to append a syncronous function to the list of calls. Pass an <i>fn</i> that will be called with the rest of the listed <i>args</a>. After the function returns, the next function in the series will continue, syncronously.
 
-<a href="#go" name="go">#</a> Series.<b>append</b>([callback])
+<a href="#go" name="go">#</a> Series.<b>go</b>([callback])
 
 Starts series of calls. If a <i>callback</i> is provided, it will be called upon completion.
 
