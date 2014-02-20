@@ -8,7 +8,6 @@
   },
   "contributors": [ ],
   "dependencies": {
-    "au-logging" : "git+ssh://git@github.com:aunalytics/au-logging.git"
   },
   "private": true
 }
