@@ -37,7 +37,7 @@ series1.go(function() {
 
 Allows you to append an asyncronous function to the list of calls. Pass an <i>fn</i> that will be called with the rest of the listed <i>args</a>. The last argument to <i>fn</i> will then be a callback function that will tell <b>Series</b> to continue onto the next function in the series.
 
-<a href="#append_async" name="append_async">#</a> Series.<b>append_async</b>(fn, [args, ...])
+<a href="#append_sync" name="append_sync">#</a> Series.<b>append_sync</b>(fn, [args, ...])
 
 Allows you to append a syncronous function to the list of calls. Pass an <i>fn</i> that will be called with the rest of the listed <i>args</a>. After the function returns, the next function in the series will continue, syncronously.
 
